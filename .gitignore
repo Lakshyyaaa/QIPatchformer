@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Shell scripts & runner scripts
+*.sh
+scripts/
+run_*.sh
+
+# Environments & IDEs
+.env
+.venv
+env/
+venv/
+ENV/
+.vscode/
+.idea/
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Jupyter Notebooks & Checkpoints
+*.ipynb
+.ipynb_checkpoints/
+
+# PyTorch Checkpoints (large binary weights)
+checkpoints/
+*.pth
+*.pt
+*.pkl
+*.h5
+
+# Visuals and charts
+Visuals/
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Root-level non-essential directories
+/Presentations/
+/Reference Papers/
+/Informer2020/
+/PatchTST/
+/QCAAPatchTF/
+/scripts/

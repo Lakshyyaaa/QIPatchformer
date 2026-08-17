@@ -1,0 +1,99 @@
+Args in experiment:
+Namespace(random_seed=2019, is_training=1, model_id='BTCUSD_336_96', model='PatchTST', data='custom', root_path='./dataset/', data_path='btcusd.csv', features='M', target='Close', freq='d', checkpoints='./checkpoints/', seq_len=336, label_len=48, pred_len=96, fc_dropout=0.3, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=5, dec_in=5, c_out=5, d_model=16, n_heads=4, e_layers=3, d_layers=1, d_ff=128, moving_avg=25, factor=1, distil=True, dropout=0.3, embed='timeF', activation='gelu', version='Standard', output_attention=False, do_predict=False, num_workers=1, itr=1, train_epochs=50, batch_size=128, patience=10, learning_rate=0.0001, des='Standard', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: mps
+============================================================
+CONFIRMATION: Instantiated attention class for PatchTST:
+  Type: <class 'layers.PatchTST_backbone._ScaledDotProductAttention'>
+  Expected Version parameter: Standard
+============================================================
+>>>>>>>start training : BTCUSD_336_96_PatchTST_custom_ftM_sl336_ll48_pl96_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Standard_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 2595
+val 338
+test 769
+Epoch: 1 cost time: 2.149937868118286
+Epoch: 1, Steps: 20 | Train Loss: 0.5804441 Vali Loss: 0.3470185 Test Loss: 2.3583577
+Validation loss decreased (inf --> 0.347018).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 0.785552978515625
+Epoch: 2, Steps: 20 | Train Loss: 0.5111803 Vali Loss: 0.2988941 Test Loss: 1.7369784
+Validation loss decreased (0.347018 --> 0.298894).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 0.7825920581817627
+Epoch: 3, Steps: 20 | Train Loss: 0.4064113 Vali Loss: 0.2504789 Test Loss: 1.3778161
+Validation loss decreased (0.298894 --> 0.250479).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 0.7538201808929443
+Epoch: 4, Steps: 20 | Train Loss: 0.3563776 Vali Loss: 0.2529418 Test Loss: 1.2360446
+EarlyStopping counter: 1 out of 10
+Updating learning rate to 9e-05
+Epoch: 5 cost time: 0.725837230682373
+Epoch: 5, Steps: 20 | Train Loss: 0.3259454 Vali Loss: 0.2414019 Test Loss: 1.1495796
+Validation loss decreased (0.250479 --> 0.241402).  Saving model ...
+Updating learning rate to 8.1e-05
+Epoch: 6 cost time: 0.7187259197235107
+Epoch: 6, Steps: 20 | Train Loss: 0.3039438 Vali Loss: 0.2297747 Test Loss: 1.0932527
+Validation loss decreased (0.241402 --> 0.229775).  Saving model ...
+Updating learning rate to 7.290000000000001e-05
+Epoch: 7 cost time: 0.7160079479217529
+Epoch: 7, Steps: 20 | Train Loss: 0.2908921 Vali Loss: 0.2214090 Test Loss: 1.0581820
+Validation loss decreased (0.229775 --> 0.221409).  Saving model ...
+Updating learning rate to 6.561e-05
+Epoch: 8 cost time: 0.7199361324310303
+Epoch: 8, Steps: 20 | Train Loss: 0.2801258 Vali Loss: 0.2160034 Test Loss: 1.0296770
+Validation loss decreased (0.221409 --> 0.216003).  Saving model ...
+Updating learning rate to 5.904900000000001e-05
+Epoch: 9 cost time: 0.7173318862915039
+Epoch: 9, Steps: 20 | Train Loss: 0.2713851 Vali Loss: 0.2186159 Test Loss: 1.0103395
+EarlyStopping counter: 1 out of 10
+Updating learning rate to 5.3144100000000005e-05
+Epoch: 10 cost time: 0.7467200756072998
+Epoch: 10, Steps: 20 | Train Loss: 0.2673186 Vali Loss: 0.2164041 Test Loss: 0.9960875
+EarlyStopping counter: 2 out of 10
+Updating learning rate to 4.782969000000001e-05
+Epoch: 11 cost time: 0.743398904800415
+Epoch: 11, Steps: 20 | Train Loss: 0.2622416 Vali Loss: 0.1965249 Test Loss: 0.9904690
+Validation loss decreased (0.216003 --> 0.196525).  Saving model ...
+Updating learning rate to 4.304672100000001e-05
+Epoch: 12 cost time: 0.7341940402984619
+Epoch: 12, Steps: 20 | Train Loss: 0.2603595 Vali Loss: 0.2105537 Test Loss: 0.9831018
+EarlyStopping counter: 1 out of 10
+Updating learning rate to 3.874204890000001e-05
+Epoch: 13 cost time: 0.758573055267334
+Epoch: 13, Steps: 20 | Train Loss: 0.2614184 Vali Loss: 0.2001678 Test Loss: 0.9754264
+EarlyStopping counter: 2 out of 10
+Updating learning rate to 3.486784401000001e-05
+Epoch: 14 cost time: 0.8013970851898193
+Epoch: 14, Steps: 20 | Train Loss: 0.2548816 Vali Loss: 0.2103196 Test Loss: 0.9704974
+EarlyStopping counter: 3 out of 10
+Updating learning rate to 3.138105960900001e-05
+Epoch: 15 cost time: 0.7895841598510742
+Epoch: 15, Steps: 20 | Train Loss: 0.2520415 Vali Loss: 0.2144270 Test Loss: 0.9669350
+EarlyStopping counter: 4 out of 10
+Updating learning rate to 2.824295364810001e-05
+Epoch: 16 cost time: 0.795220136642456
+Epoch: 16, Steps: 20 | Train Loss: 0.2503905 Vali Loss: 0.2008124 Test Loss: 0.9656219
+EarlyStopping counter: 5 out of 10
+Updating learning rate to 2.541865828329001e-05
+Epoch: 17 cost time: 0.79532790184021
+Epoch: 17, Steps: 20 | Train Loss: 0.2499652 Vali Loss: 0.1994259 Test Loss: 0.9625323
+EarlyStopping counter: 6 out of 10
+Updating learning rate to 2.287679245496101e-05
+Epoch: 18 cost time: 0.7691168785095215
+Epoch: 18, Steps: 20 | Train Loss: 0.2481564 Vali Loss: 0.2173047 Test Loss: 0.9616753
+EarlyStopping counter: 7 out of 10
+Updating learning rate to 2.0589113209464907e-05
+Epoch: 19 cost time: 0.7932989597320557
+Epoch: 19, Steps: 20 | Train Loss: 0.2472651 Vali Loss: 0.2052363 Test Loss: 0.9590271
+EarlyStopping counter: 8 out of 10
+Updating learning rate to 1.8530201888518416e-05
+Epoch: 20 cost time: 0.7815990447998047
+Epoch: 20, Steps: 20 | Train Loss: 0.2490448 Vali Loss: 0.2068756 Test Loss: 0.9582232
+EarlyStopping counter: 9 out of 10
+Updating learning rate to 1.6677181699666577e-05
+Epoch: 21 cost time: 0.7601208686828613
+Epoch: 21, Steps: 20 | Train Loss: 0.2432795 Vali Loss: 0.1992307 Test Loss: 0.9562166
+EarlyStopping counter: 10 out of 10
+Early stopping
+>>>>>>>testing : BTCUSD_336_96_PatchTST_custom_ftM_sl336_ll48_pl96_dm16_nh4_el3_dl1_df128_fc1_ebtimeF_dtTrue_Standard_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 769
+mse:0.9904690384864807, mae:0.7384085655212402, rse:0.5860880613327026

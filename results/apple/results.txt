@@ -1,0 +1,38 @@
+========================================================================================================================
+EXPERIMENT SUMMARY LOG: Apple Equity (AAPL) - Horizon 96 | Lookback 336
+Framework: QIPatchFormer (Quantum-Inspired Attention) vs. PatchTST (Standard Scaled Dot-Product Attention)
+Hyperparameters: seq_len=336, pred_len=96, enc_in=5, dec_in=5, c_out=5, d_model=16, n_heads=4, e_layers=3, d_ff=128
+========================================================================================================================
+
+------------------------------------------------------------------------------------------------------------------------
+INDIVIDUAL SEED RESULTS (MSE)
+------------------------------------------------------------------------------------------------------------------------
+
+[Seed 2019]
+  QIPatchFormer (QIA)  : mse: 2.7576  | mae: 1.1623  | rse: 0.2403  [Winner: QIPatchFormer (+4.63% MSE improvement)]
+  PatchTST (Standard)  : mse: 2.8915  | mae: 1.1791  | rse: 0.2461
+
+[Seed 2020]
+  QIPatchFormer (QIA)  : mse: 2.7798  | mae: 1.1609  | rse: 0.2413  [Winner: QIPatchFormer (+0.99% MSE improvement)]
+  PatchTST (Standard)  : mse: 2.8077  | mae: 1.1682  | rse: 0.2425
+
+[Seed 2021]
+  QIPatchFormer (QIA)  : mse: 2.7403  | mae: 1.1572  | rse: 0.2395  [Winner: QIPatchFormer (+3.05% MSE improvement)]
+  PatchTST (Standard)  : mse: 2.8266  | mae: 1.1697  | rse: 0.2433
+
+[Seed 2022]
+  QIPatchFormer (QIA)  : mse: 2.7224  | mae: 1.1608  | rse: 0.2388
+  PatchTST (Standard)  : mse: 2.7195  | mae: 1.1594  | rse: 0.2386  [Winner: PatchTST (+0.11% MSE improvement)]
+
+[Seed 2023]
+  QIPatchFormer (QIA)  : mse: 2.7586  | mae: 1.1587  | rse: 0.2403  [Winner: QIPatchFormer (+2.24% MSE improvement)]
+  PatchTST (Standard)  : mse: 2.8219  | mae: 1.1695  | rse: 0.2431
+
+------------------------------------------------------------------------------------------------------------------------
+5-SEED AGGREGATE SUMMARY (MEAN ± STD)
+------------------------------------------------------------------------------------------------------------------------
+  QIPatchFormer (QIA)  : MSE: 2.7517 ± 0.0213 | MAE: 1.1600 ± 0.0019 | RSE: 0.2400 ± 0.0010  [OVERALL WINNER]
+  PatchTST (Standard)  : MSE: 2.8134 ± 0.0617 | MAE: 1.1692 ± 0.0070 | RSE: 0.2427 ± 0.0027
+
+  Overall Winner: QIPatchFormer (+2.19% lower Mean MSE, 3x lower standard deviation across seeds)
+========================================================================================================================
