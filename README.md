@@ -5,7 +5,7 @@
 [![Research](https://img.shields.io/badge/Type-Research-purple.svg)](#)
 [![Time Series](https://img.shields.io/badge/Domain-Time%20Series-orange.svg)](#)
 [![Transformer](https://img.shields.io/badge/Architecture-Transformer-green.svg)](#)
-[![Quantum Inspired](https://img.shields.io/badge/Attention-Quantum--Inspired-black.svg)](#)
+[![Quantum Inspired](https://img.shields.io/badge/Attention-Quantum--Inspired-purple.svg)](#)
 
 ## Quantum-Inspired Patch Transformer for Long-Term Financial Time-Series Forecasting
 
