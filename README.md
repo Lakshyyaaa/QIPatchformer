@@ -376,13 +376,7 @@ If you use this work, please cite:
 **Harshika Masand**
 **Lakshya Santani**
 **Jugal Jeetendra Manek**
-**Venkataramanan Va**
-
-Department of Information Technology
-K J Somaiya School of Engineering, Somaiya Vidyavihar University
-Mumbai, Maharashtra, India
-
----
+**Venkataramanan V**
 
 # License
 
