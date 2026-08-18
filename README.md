@@ -1,5 +1,8 @@
 # QI-Patchformer
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Research-lightgrey.svg)](LICENSE)
+
 ## Quantum-Inspired Patch Transformer for Long-Term Financial Time-Series Forecasting
 
 QI-Patchformer is an encoder-only Transformer architecture for long-term financial time-series forecasting. It combines the local temporal representation capabilities of patch-based Transformers with a Quantum-Inspired Attention (QIA) mechanism based on Hilbert-space representations and Born's Rule.
