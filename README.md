@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-ee4c2c.svg)](https://pytorch.org/)
-[![Research](https://img.shields.io/badge/Type-Research-purple.svg)](#)
+[![Research](https://img.shields.io/badge/Type-Research-yellow.svg)](#)
 [![Time Series](https://img.shields.io/badge/Domain-Time%20Series-orange.svg)](#)
 [![Transformer](https://img.shields.io/badge/Architecture-Transformer-green.svg)](#)
 [![Quantum Inspired](https://img.shields.io/badge/Attention-Quantum--Inspired-purple.svg)](#)
